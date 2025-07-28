@@ -3,7 +3,7 @@ import iconoBasura from "../assets/icons8-basura-100.png";
 import { toast } from "sonner";
 function MisPizzas({ pizzasCompradas, setPizzasCompradas }) {
   function eliminarPizza(id) {
-    fetch(`http://localhost:4000/api/pizzas/${id}`, {
+    fetch(`${import.meta.env.VITE_API_URL}/api/pizzas/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -16,7 +16,7 @@ function MisPizzas({ pizzasCompradas, setPizzasCompradas }) {
         console.log("Pizza eliminada:", res);
         toast.info("Pizza eliminada")
         // Actualizar el estado de las pizzas compradas
-        fetch("http://localhost:4000/api/pizzas")
+        fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`)
           .then((response) => response.json())
           .then((data) => {
             setPizzasCompradas(data);

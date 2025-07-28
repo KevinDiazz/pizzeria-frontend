@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const fetchPizzas = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/pizzas", {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`, {
           headers: {
             "Content-Type": "application/json",
           },

@@ -30,7 +30,7 @@ export const añadirPizza = (
     precio: precio.precioTotal,
   };
   // Eliminar el elemento inicial de ejemplo si está presente
-  fetch("http://localhost:4000/api/pizzas", {
+  fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export const añadirPizza = (
       return toast.success("Pizza añadida correctamente");
     })
     .then(() => {
-      fetch("http://localhost:4000/api/pizzas")
+      fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`)
         .then((response) => response.json())
         .then((data) => {
           setPizzasCompradas(data);
