@@ -42,7 +42,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="bg-[url('./assets/32744249.JPG')] bg-center min-h-screen">
+      <div className="bg-[url('./assets/32744249.JPG')] bg-center min-h-screen  bg-repeat bg-fixed">
         <Header />
         <div className="fixed top-4 left-1/2 w-[90vw] max-w-md md:max-w-xl transform -translate-x-1/2 z-50 px-2 md:px-0">
           <Toaster
