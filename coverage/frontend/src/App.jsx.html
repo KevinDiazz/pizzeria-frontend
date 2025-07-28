@@ -1,0 +1,385 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for frontend/src/App.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">frontend/src</a> App.jsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/80</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/80</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import "./App.css";<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
+<span class="cstat-no" title="statement not covered" >import { useEffect, useState } from "react";</span>
+<span class="cstat-no" title="statement not covered" >import PizzaComp from "./components/pizzaComp";</span>
+<span class="cstat-no" title="statement not covered" >import ButtonsToppings from "./components/buttons";</span>
+<span class="cstat-no" title="statement not covered" >import MisPizzas from "./components/misPizzas";</span>
+<span class="cstat-no" title="statement not covered" >import { Button } from "@/components/ui/button";</span>
+<span class="cstat-no" title="statement not covered" >import { añadirPizza } from "./utils/toppins";</span>
+<span class="cstat-no" title="statement not covered" >import { Toaster } from "@/components/ui/sonner";</span>
+<span class="cstat-no" title="statement not covered" >import Header from "./components/header";</span>
+<span class="cstat-no" title="statement not covered" >import Footer from "./components/footer";</span>
+<span class="cstat-no" title="statement not covered" >function App() {</span>
+<span class="cstat-no" title="statement not covered" >  const [visibles, setVisibles] = useState({</span>
+<span class="cstat-no" title="statement not covered" >    salami: true,</span>
+<span class="cstat-no" title="statement not covered" >    cebolla: true,</span>
+<span class="cstat-no" title="statement not covered" >    queso: true,</span>
+<span class="cstat-no" title="statement not covered" >    tomate: true,</span>
+<span class="cstat-no" title="statement not covered" >    pimientos: true,</span>
+<span class="cstat-no" title="statement not covered" >  });</span>
+<span class="cstat-no" title="statement not covered" >  const [numPizzas, setNumPizzas] = useState(1);</span>
+<span class="cstat-no" title="statement not covered" >  const [precio, setPrecio] = useState({ precioPizza: 6.5, precioTotal: 6.5 });</span>
+<span class="cstat-no" title="statement not covered" >  const [pizzasCompradas, setPizzasCompradas] = useState([]);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  useEffect(() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    const fetchPizzas = async () =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        const res = await fetch("http://localhost:4000/api/pizzas", {</span>
+<span class="cstat-no" title="statement not covered" >          headers: {</span>
+<span class="cstat-no" title="statement not covered" >            "Content-Type": "application/json",</span>
+<span class="cstat-no" title="statement not covered" >          },</span>
+<span class="cstat-no" title="statement not covered" >        });</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (!res.ok) throw new Error("Error al obtener pizzas");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        const data = await res.json();</span>
+<span class="cstat-no" title="statement not covered" >        setPizzasCompradas(data);</span>
+<span class="cstat-no" title="statement not covered" >      } catch (err) {</span>
+<span class="cstat-no" title="statement not covered" >        console.error("Error:", err);</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    fetchPizzas();</span>
+<span class="cstat-no" title="statement not covered" >  }, []);</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div className="bg-[url('./assets/32744249.JPG')] bg-center min-h-screen"&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;Header /&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;div className="fixed top-4 left-1/2 w-[90vw] max-w-md md:max-w-xl transform -translate-x-1/2 z-50 px-2 md:px-0"&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Toaster</span>
+<span class="cstat-no" title="statement not covered" >            richColors</span>
+<span class="cstat-no" title="statement not covered" >            position="top-center"</span>
+<span class="cstat-no" title="statement not covered" >            toastOptions={{</span>
+<span class="cstat-no" title="statement not covered" >              style: {</span>
+<span class="cstat-no" title="statement not covered" >                fontSize: "14px",</span>
+<span class="cstat-no" title="statement not covered" >                width: "100%",</span>
+<span class="cstat-no" title="statement not covered" >                maxWidth: "400px",</span>
+<span class="cstat-no" title="statement not covered" >                margin: "0 auto",</span>
+<span class="cstat-no" title="statement not covered" >              },</span>
+<span class="cstat-no" title="statement not covered" >            }}</span>
+          /&gt;
+        &lt;/div&gt;
+<span class="cstat-no" title="statement not covered" >        &lt;div className="flex flex-col justify-center md:flex-row items-center md:items-start md:h-120 gap-6 px-4"&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;PizzaComp</span>
+<span class="cstat-no" title="statement not covered" >            visibles={visibles}</span>
+<span class="cstat-no" title="statement not covered" >            numPizzas={numPizzas}</span>
+<span class="cstat-no" title="statement not covered" >            setNumPizzas={setNumPizzas}</span>
+<span class="cstat-no" title="statement not covered" >            precio={precio}</span>
+<span class="cstat-no" title="statement not covered" >            setPrecio={setPrecio}</span>
+          /&gt;
+<span class="cstat-no" title="statement not covered" >          &lt;MisPizzas</span>
+<span class="cstat-no" title="statement not covered" >            pizzasCompradas={pizzasCompradas}</span>
+<span class="cstat-no" title="statement not covered" >            setPizzasCompradas={setPizzasCompradas}</span>
+          /&gt;
+        &lt;/div&gt;
+<span class="cstat-no" title="statement not covered" >        &lt;h3 className="text-2xl md:text-4xl mx-4 md:mx-6  px-4 md:px-8 py-4 rounded-lg bg-gradient-to-r from-yellow-700 via-red-600 to-yellow-700 shadow-lg font-[lora] text-white font-bold tracking-wide text-center mt-8 mb-4"&gt;</span>
+          INGREDIENTES
+        &lt;/h3&gt;
+<span class="cstat-no" title="statement not covered" >        &lt;ButtonsToppings</span>
+<span class="cstat-no" title="statement not covered" >          visibles={visibles}</span>
+<span class="cstat-no" title="statement not covered" >          setVisibles={setVisibles}</span>
+<span class="cstat-no" title="statement not covered" >          setPrecio={setPrecio}</span>
+<span class="cstat-no" title="statement not covered" >          numPizzas={numPizzas}</span>
+<span class="cstat-no" title="statement not covered" >          setNumPizzas={setNumPizzas}</span>
+        /&gt;
+<span class="cstat-no" title="statement not covered" >        &lt;div className="flex justify-center"&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;Button</span>
+<span class="cstat-no" title="statement not covered" >            onClick={() =&gt;</span>
+<span class="cstat-no" title="statement not covered" >              añadirPizza(visibles, numPizzas, precio, setPizzasCompradas)</span>
+            }
+<span class="cstat-no" title="statement not covered" >            className="cursor-pointer mt-8 mb-10 px-6 md:px-8 py-3 md:py-4 rounded-full bg-gradient-to-r from-amber-400 via-red-500 to-amber-600 shadow-lg hover:scale-105 transition-transform duration-200 hover:from-amber-500 hover:to-red-600 border-4 border-amber-700 text-lg md:text-xl font-extrabold text-white font-[lora] tracking-wide"</span>
+<span class="cstat-no" title="statement not covered" >          &gt;</span>
+            🍕 Añadir Pizza
+          &lt;/Button&gt;
+        &lt;/div&gt;
+<span class="cstat-no" title="statement not covered" >        &lt;Footer /&gt;</span>
+      &lt;/div&gt;
+    &lt;/&gt;
+  );
+<span class="cstat-no" title="statement not covered" >}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >export default App;</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-07-28T20:50:18.721Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
