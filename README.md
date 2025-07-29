@@ -1,12 +1,27 @@
-# React + Vite
+# 🍕 La Pizzería
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**La Pizzería** es una aplicación web que simula el funcionamiento de una pizzería interactiva. Los usuarios pueden personalizar su pizza agregando o quitando ingredientes visualmente, y luego agregarla a una lista de pedidos.
 
-Currently, two official plugins are available:
+Este es mi primer proyecto **Full Stack**, combinando React en el frontend y Node.js en el backend (simulando una base de datos con un array en memoria). 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React**
+- **JavaScript**
+- **Node.js**
+- **ShadCN UI**
+- **Tailwind CSS**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Funcionalidades destacadas
+
+- Visualización dinámica de una pizza con ingredientes que se superponen sobre una imagen PNG.
+- Botones para añadir o quitar ingredientes de manera interactiva.
+- Lista de pizzas personalizadas que el usuario ha creado.
+- Backend con Node.js que maneja los datos de las pizzas a través de endpoints CRUD.
+- Comunicación entre frontend y backend mediante peticiones HTTP.
+- Base de datos simulada en el backend usando un array.
+
+## 🚀 Deploy
+
+- **Frontend en Vercel:** [https://pizzeria-frontend-seven.vercel.app/]
+- **Backend Code:** https://github.com/KevinDiazz/pizzeria-backend
