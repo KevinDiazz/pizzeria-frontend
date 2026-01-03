@@ -18,18 +18,18 @@ export const añadirPizza = (
   precio,
   setPizzasCompradas
 ) => {
-  // Extraer ingredientes seleccionados
   const ingredientes = Object.keys(visibles).filter((key) => visibles[key]);
+
   if (ingredientes.length < 2) {
     return toast.error("Debes seleccionar al menos 2 ingredientes");
   }
-  // Crear objeto pizza
+
   const nuevaPizza = {
     ingredientes,
     cantidad: numPizzas,
     precio: precio.precioTotal,
   };
-  // Eliminar el elemento inicial de ejemplo si está presente
+
   fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`, {
     method: "POST",
     headers: {
@@ -39,25 +39,22 @@ export const añadirPizza = (
   })
     .then(async (response) => {
       if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error || "Error al añadir la pizza");
+        const text = await response.text(); // ✅ CLAVE
+        throw new Error(text || "Error al añadir la pizza");
       }
       return response.json();
     })
-    .then((data) => {
-      console.log("Pizza añadida:", data);
-      return toast.success("Pizza añadida correctamente");
-    })
     .then(() => {
-      fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`)
-        .then((response) => response.json())
-        .then((data) => {
-          setPizzasCompradas(data);
-        });
+      toast.success("Pizza añadida correctamente");
+      return fetch(`${import.meta.env.VITE_API_URL}/api/pizzas`);
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      setPizzasCompradas(data);
     })
     .catch((error) => {
       console.error("Error al añadir la pizza:", error);
-      toast.error("Error al añadir la pizza: " + error.message);
+      toast.error(error.message);
     });
 };
 
