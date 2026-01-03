@@ -19,6 +19,7 @@ export const añadirPizza = (
   setPizzasCompradas
 ) => {
   const ingredientes = Object.keys(visibles).filter((key) => visibles[key]);
+  console.log("API:", import.meta.env.VITE_API_URL);
 
   if (ingredientes.length < 2) {
     return toast.error("Debes seleccionar al menos 2 ingredientes");
